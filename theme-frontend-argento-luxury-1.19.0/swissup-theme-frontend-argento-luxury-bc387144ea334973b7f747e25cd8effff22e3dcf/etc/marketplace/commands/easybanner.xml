@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <command class="Swissup\Easybanner\Installer\Command\Banner" module="Swissup_Easybanner">
+        <data>
+            <item>
+                <item name="name">argento_luxury_home</item>
+                <item name="limit">1</item>
+                <item name="banners">
+                    <item>
+                        <item name="identifier">argento-luxury-home1</item>
+                        <item name="title">Special Offer</item>
+                        <item name="url">free-shipping</item>
+                        <item name="image">/argento/luxury/argento_luxury_callout_home1.png</item>
+                    </item>
+                </item>
+            </item>
+        </data>
+    </command>
+</config>

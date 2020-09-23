@@ -1,0 +1,70 @@
+//
+//  Mobile
+//  _____________________________________________
+& when (@media-common = true) {
+    .product.data.items {
+        #product-review-container {
+            .block-title {
+                &:extend(.abs-no-display);
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    // reset responsive table styles for grouped product table
+
+    .table.grouped {
+        margin-top: @indent__base;
+
+        .col {
+            &.item,
+            &.qty {
+                display: table-cell !important;
+                padding: 5px @layout__width-xs-indent !important;
+            }
+
+            &.qty {
+                min-width: 60px;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .product-info-main {
+        //  Product Tabs can be moved into info-main with theme editor (or XML)
+        .product.data.items {
+            // Review tab
+            #product-review-container,
+            .review-add {
+                float: none;
+                width: 100%;
+            }
+
+            #product-review-container {
+                .review-item {
+                    &:first-child {
+                        padding-top: 0;
+                    }
+
+                    &:last-child {
+                        padding-bottom: 30px;
+                    }
+                }
+
+                .review-toolbar {
+                    margin: 0;
+
+                    .pages {
+                        padding: 0;
+                    }
+                }
+            }
+
+            .review-fieldset {
+                margin-bottom: @indent__base;
+            }
+        }
+    }
+}

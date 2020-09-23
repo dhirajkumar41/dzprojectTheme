@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+    <command class="Swissup\Navigationpro\Installer\Command\Menu" module="Swissup_Navigationpro">
+        <data>
+            <item>
+                <item name="activate">1</item>
+                <item name="type" type="const">Swissup\Navigationpro\Model\Config\Source\BuilderType::TYPE_MEGAMENU</item>
+                <item name="theme_id" helper="Swissup\Marketplace\Installer\Helper\Theme::getId">
+                    <param name="theme">frontend/Swissup/argento-luxury</param>
+                </item>
+                <item name="settings">
+                    <item name="css_class">navpro-nowrap</item>
+                    <item name="identifier">argento_luxury_topmenu</item>
+                </item>
+            </item>
+        </data>
+    </command>
+</config>

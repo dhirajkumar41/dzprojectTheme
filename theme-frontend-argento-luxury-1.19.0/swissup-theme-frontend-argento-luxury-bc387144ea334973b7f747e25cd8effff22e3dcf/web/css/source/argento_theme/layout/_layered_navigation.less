@@ -1,0 +1,22 @@
+& when (@media-common = true) {
+    .filter-options {
+        .filter-options-title {
+            .lib-heading(h3);
+            text-transform: none;
+            margin-top: 0;
+
+            .page-layout-1column & {
+                border: none;
+            }
+        }
+
+        .filter-options-content a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                background-color: transparent;
+            }
+        }
+    }
+}

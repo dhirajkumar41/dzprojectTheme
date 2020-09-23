@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <command class="Swissup\Marketplace\Installer\Command\ProductCollection">
+        <data>
+            <item name="news_from_date">10</item>
+            <item name="featured">6</item>
+        </data>
+    </command>
+</config>

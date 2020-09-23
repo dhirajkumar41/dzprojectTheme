@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <packages>
+        <package>swissup/argento-m2</package>
+        <package>swissup/theme-frontend-argento-luxury</package>
+    </packages>
+
+    <fields>
+        <field name="theme" title="Select Theme">
+            <option title="Argento Luxury">swissup/theme-frontend-argento-luxury</option>
+        </field>
+    </fields>
+
+    <commands>
+        <conditions>
+            <param name="theme">swissup/theme-frontend-argento-luxury</param>
+        </conditions>
+        <include path="commands/config.xml"/>
+        <include path="commands/cms_page.xml"/>
+        <include path="commands/cms_block.xml"/>
+        <include path="commands/easyslide.xml"/>
+        <include path="commands/easybanner.xml"/>
+        <include path="commands/easytabs.xml"/>
+        <include path="commands/product_attribute.xml"/>
+        <include path="commands/product.xml"/>
+        <include path="commands/navigationpro.xml"/>
+        <include path="commands/resources.xml"/>
+    </commands>
+</config>

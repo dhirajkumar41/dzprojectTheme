@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <packages>
+        <package>swissup/amp</package>
+        <package>swissup/module-amp</package>
+        <package>swissup/argento-m2</package>
+        <package>swissup/theme-frontend-argento-essence</package>
+        <package>swissup/theme-frontend-argento-flat</package>
+        <package>swissup/theme-frontend-argento-force</package>
+        <package>swissup/theme-frontend-argento-luxury</package>
+        <package>swissup/theme-frontend-argento-mall</package>
+        <package>swissup/theme-frontend-argento-pure2</package>
+        <package>swissup/theme-frontend-argento-stripes</package>
+    </packages>
+
+    <commands>
+        <include path="commands/config.xml"/>
+        <include path="commands/cms_page.xml"/>
+        <include path="commands/cms_block.xml"/>
+        <include path="commands/easyslide.xml"/>
+        <include path="commands/resources.xml"/>
+    </commands>
+</config>

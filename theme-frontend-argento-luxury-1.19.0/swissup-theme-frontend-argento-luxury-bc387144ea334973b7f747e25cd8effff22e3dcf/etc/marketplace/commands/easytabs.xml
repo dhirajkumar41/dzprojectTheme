@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<config>
+    <command class="Swissup\Easytabs\Installer\Command\UnsetTabs" module="Swissup_Easytabs">
+        <data>
+            <item>
+                <item name="status">1</item>
+            </item>
+        </data>
+    </command>
+    <command class="Swissup\Easytabs\Installer\Command\Tabs" module="Swissup_Easytabs">
+        <data>
+            <item>
+                <item name="title">Details</item>
+                <item name="alias">product.info.description</item>
+                <item name="block">Magento\Catalog\Block\Product\View\Description</item>
+                <item name="sort_order">0</item>
+                <item name="widget_template">Magento_Catalog::product/view/description.phtml</item>
+            </item>
+            <item>
+                <item name="title">{{eval code="getTabTitle()"}}</item>
+                <item name="alias">reviews</item>
+                <item name="block">Swissup\Easytabs\Block\Tab\Product\Review</item>
+                <item name="sort_order">20</item>
+                <item name="widget_template">Magento_Review::review.phtml</item>
+            </item>
+            <item>
+                <item name="title">Free delivery and returns</item>
+                <item name="alias">delivery_and_returns_tabbed</item>
+                <item name="block">Swissup\Easytabs\Block\Tab\Html</item>
+                <item name="sort_order">99</item>
+                <item name="widget_content"><![CDATA[<p>Our store delivers an extensive and expertly curated selection of fashion and lifestyle offerings.</p>\n<p>If you are not satisfied with your order - send it back within 30 days after day of purchase!</p>]]></item>
+            </item>
+            <item>
+                <item name="title">Customers also buy</item>
+                <item name="alias">customers_buy_tabbed</item>
+                <item name="block">Swissup\Easytabs\Block\Tab\Template</item>
+                <item name="sort_order">10</item>
+                <item name="widget_tab">1</item>
+                <item name="widget_block">Swissup\SoldTogether\Block\Customer</item>
+                <item name="widget_template">Swissup_SoldTogether::product/carousel.phtml</item>
+                <item name="widget_unset">soldtogether.product.customer</item>
+            </item>
+            <item>
+                <item name="title">Questions</item>
+                <item name="alias">askit_tabbed</item>
+                <item name="block">Swissup\Easytabs\Block\Tab\Template</item>
+                <item name="sort_order">90</item>
+                <item name="widget_tab">1</item>
+                <item name="widget_block">Swissup\Askit\Block\Question\Widget</item>
+                <item name="widget_template">none</item>
+                <item name="widget_unset" type="null"/>
+            </item>
+            <item>
+                <item name="title">Recently viewed</item>
+                <item name="alias">viewed_tabbed</item>
+                <item name="block">Swissup\Easytabs\Block\Tab\Html</item>
+                <item name="sort_order">99</item>
+                <item name="widget_tab">1</item>
+                <item name="widget_content">{{widget type="Magento\Reports\Block\Product\Widget\Viewed" page_size="5" template="widget/viewed/content/viewed_grid.phtml"}}</item>
+            </item>
+        </data>
+    </command>
+</config>

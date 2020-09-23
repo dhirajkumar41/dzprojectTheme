@@ -1,0 +1,62 @@
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .md-flex {
+        display: flex;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .flex-col {
+        &, &-left, &-center, &-right {
+            > div + div {
+                margin-left: 10px;
+            }
+
+            &.nowrap {
+                min-width: 0;
+            }
+        }
+
+        &-left {
+            margin-right: auto;
+        }
+
+        &-center {
+            padding: 0 10px;
+            margin: 0 auto;
+        }
+
+        &-right {
+            margin-left: auto;
+        }
+
+        .flex-grow-1& {
+            &-left {
+                justify-content: flex-start;
+            }
+
+            &-center {
+                justify-content: center;
+            }
+
+            &-right {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .flex-grow-1 {
+        align-items: center;
+        display: flex;
+        flex: 1;
+    }
+
+    .flex-grow-none {
+        flex: none;
+    }
+}

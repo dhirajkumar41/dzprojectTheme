@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<config>
+    <command class="Swissup\EasySlide\Installer\Command\Slider" module="Swissup_EasySlide">
+        <data>
+            <item>
+                <item name="title">Argento Luxury</item>
+                <item name="identifier">argento_luxury</item>
+                <item name="theme">black</item>
+                <item name="autoplay">5000</item>
+                <item name="loadPrevNext">1</item>
+                <item name="sizes">
+                    <item name="sizes">
+                        <item>
+                            <item name="media_query">(max-width: 480px)</item>
+                            <item name="image_width">480</item>
+                        </item>
+                        <item>
+                            <item name="media_query">(max-width: 768px)</item>
+                            <item name="image_width">768</item>
+                        </item>
+                    </item>
+                </item>
+                <item name="slides">
+                    <item>
+                        <item name="title">Slide 1</item>
+                        <item name="image">argento/luxury/argento_luxury_slider1.jpg</item>
+                        <item name="description" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                            <param name="path" type="path">content/easyslide/slide1.html</param>
+                        </item>
+                        <item name="desc_position">top</item>
+                        <item name="desc_background">transparent</item>
+                        <item name="sort_order">10</item>
+                    </item>
+                    <item>
+                        <item name="title">Slide 2</item>
+                        <item name="image">argento/luxury/argento_luxury_slider2.jpg</item>
+                        <item name="description" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                            <param name="path" type="path">content/easyslide/slide1.html</param>
+                        </item>
+                        <item name="desc_position">top</item>
+                        <item name="desc_background">transparent</item>
+                        <item name="sort_order">20</item>
+                    </item>
+                    <item>
+                        <item name="title">Slide 3</item>
+                        <item name="image">argento/luxury/argento_luxury_slider3.jpg</item>
+                        <item name="description" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                            <param name="path" type="path">content/easyslide/slide1.html</param>
+                        </item>
+                        <item name="desc_position">top</item>
+                        <item name="desc_background">transparent</item>
+                        <item name="sort_order">30</item>
+                    </item>
+                    <item>
+                        <item name="title">Slide 4</item>
+                        <item name="image">argento/luxury/argento_luxury_slider4.jpg</item>
+                        <item name="description" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                            <param name="path" type="path">content/easyslide/slide1.html</param>
+                        </item>
+                        <item name="desc_position">top</item>
+                        <item name="desc_background">transparent</item>
+                        <item name="sort_order">40</item>
+                    </item>
+                    <item>
+                        <item name="title">Slide 5</item>
+                        <item name="image">argento/luxury/argento_luxury_slider5.jpg</item>
+                        <item name="description" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                            <param name="path" type="path">content/easyslide/slide1.html</param>
+                        </item>
+                        <item name="desc_position">top</item>
+                        <item name="desc_background">transparent</item>
+                        <item name="sort_order">50</item>
+                    </item>
+                </item>
+            </item>
+        </data>
+    </command>
+</config>

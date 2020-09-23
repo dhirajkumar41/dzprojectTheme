@@ -1,0 +1,50 @@
+& when (@media-common = true) {
+    button,
+    a.action {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .jumbotron + .jumbotron-slick {
+        border-top: 1px solid #e2e2e2;
+    }
+
+    .price-box .old-price .price-container {
+        span.price-label {
+            display: none;
+        }
+
+        .price {
+            text-decoration: line-through;
+        }
+    }
+
+    .swatch-option-tooltip {
+        .corner,
+        &-layered .corner {
+            bottom: 1px;
+        }
+    }
+
+    .swatch-attribute {
+        .swatch-option {
+            min-width: 20px;
+
+            &.text {
+                padding: 2px;
+            }
+
+            &.selected,
+            &:not(.disabled):hover,
+            &.image:not(.disabled):hover,
+            &.color:not(.disabled):hover {
+                outline: 2px solid #000;
+            }
+        }
+    }
+
+    /* System Messages */
+    .message {
+        letter-spacing: 0.54px;
+    }
+}
+

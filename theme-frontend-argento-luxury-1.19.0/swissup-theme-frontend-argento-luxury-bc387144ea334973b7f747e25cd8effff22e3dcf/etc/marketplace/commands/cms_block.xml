@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <command class="Swissup\Marketplace\Installer\Command\CmsBlock">
+        <data>
+            <item>
+                <item name="title">footer_cms_content</item>
+                <item name="identifier">footer_cms_content</item>
+                <item name="content" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                    <param name="path" type="path">content/cms_block/footer_cms_content.html</param>
+                </item>
+            </item>
+            <item>
+                <item name="title">product_page_additional_tabs</item>
+                <item name="identifier">product_page_additional_tabs</item>
+                <item name="content" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                    <param name="path" type="path">content/cms_block/product_page_additional_tabs.html</param>
+                </item>
+            </item>
+        </data>
+    </command>
+</config>
